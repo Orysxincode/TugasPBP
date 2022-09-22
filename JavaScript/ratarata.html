@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rata Rata Angka</title>
+</head>
+<body>
+    <h1>Rata Rata Angka</h1>
+    <p>Klik kanan, cari <strong>Inspect</strong>, dan pergi ke <strong>Console</strong></p>
+    <script>
+        var x = prompt("Masukkan angka. Gunakan tanda koma(,) tanpa spasi untuk memisah angka");
+        x = x.split(",");
+
+        var a = 0;
+        for (var i = 0; i < x.length; i++){
+            a += Number(x[i]);
+        }
+        var average = a/x.length;
+        console.log(`Data inserted: ${x}`);
+        console.log(`The average of data is: ${average}`);
+    </script>
+    <button onclick="window.location.reload();">Refresh untuk Memasukkan Input Baru</button>
+    <button onclick="window.location.href='index.html';">Kembali ke Laman Utama</button>
+</body>
+</html>

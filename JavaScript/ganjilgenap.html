@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mencari Ganjil Genap Suatu Jarak</title>
+</head>
+<body>
+    <h1>Mencari Ganjil Genap Suatu Jarak</h1>
+    <p>Klik kanan, cari <strong>Inspect</strong>, dan pergi ke <strong>Console</strong></p>
+    <script>
+        var x = Number(prompt("Masukkan angka x: (Angka harus lebih rendah dari y)"));
+        var y = Number(prompt("Masukkan angka y: (Angka harus lebih rendah dari x)"));
+
+        var totalOdd = 0;
+        var totalEven = 0;
+        for(var i = x; i <= y; i++){
+            i%2 == 0 ? totalEven++ : totalOdd++;
+        }
+        console.log(`Total odd: ${totalOdd}`);
+        console.log(`Total even: ${totalEven}`);
+    </script>
+    <button onclick="window.location.reload();">Refresh untuk Memasukkan Input Baru</button>
+    <button onclick="window.location.href='index.html';">Kembali ke Laman Utama</button>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membalik Urutan Huruf</title>
+</head>
+<body>
+    <h1>Membalik Urutan Huruf</h1>
+    <p>Klik kanan, cari <strong>Inspect</strong>, dan pergi ke <strong>Console</strong></p>
+    <script>
+        var word = prompt("Masukkan sebuah kata atau kalimat:");
+        var revWord = word.split("").reverse().join("");
+        console.log(revWord);
+    </script>
+    <button onclick="window.location.reload();">Refresh untuk Memasukkan Input Baru</button>
+    <button onclick="window.location.href='index.html';">Kembali ke Laman Utama</button>
+</body>
+</html>

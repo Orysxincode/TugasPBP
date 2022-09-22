@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kalkulator</title>
+    </head>
+    <body>
+        <h1>Kalkulator Sederhana</h1>
+        <p>Klik kanan, cari <strong>Inspect</strong>, dan pergi ke <strong>Console</strong></p>
+        <script>
+            var a = Number(prompt("Input nilai x = "));
+            var b = Number(prompt("Input nilai y = "));
+
+            var add = a + b;
+            var min = a - b;
+            var mul = a * b;
+            var dif = a / b;
+
+            console.log(`${a} and ${b}:`);
+            console.log(`+ = ${add}`);
+            console.log(`- = ${min}`);
+            console.log(`* = ${mul}`);
+            console.log(`/ = ${dif}`);
+        </script>
+        <button onclick="window.location.reload();">Refresh untuk Memasukkan Input Baru</button>
+        <button onclick="window.location.href='index.html';">Kembali ke Laman Utama</button>
+    </body>
+</html>
